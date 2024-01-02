@@ -1,0 +1,56 @@
+.bg-grey {
+  background-color: #121212;
+}
+.bg-black {
+  background-color: black;
+  color: #fff;
+}
+.invert {
+  filter: invert(1);
+}
+.m1 {
+  margin: 5px;
+}
+.m2{
+  margin: 10px;
+}
+.rounded {
+  border-radius: 7px;
+}
+.aspect {
+  width: 1.7rem;
+  height: 1.7rem;
+}
+.aspect2{
+  width: 1rem;
+  height: 1rem;
+}
+.li-style {
+  text-decoration: none;
+  color: #fff;
+}
+.m2{
+  margin: 10px;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track,::-webkit-scrollbar-track-piece {
+  box-shadow: inset 0 0 5px grey; 
+  background:black;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(28, 28, 28); 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #282828; 
+}
+input[type="range"] {
+  accent-color: white;
+}

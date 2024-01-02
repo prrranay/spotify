@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify – Web Player</title>
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <link rel="stylesheet" href="css/utility.css">
+  </head>
+  <body>
+    <div class="container bg-black">
+      <div class="left ">
+        <div class="nav m1 rounded bg-grey">
+          <div class="logo m1">
+            <div class="logo-img">
+              <img class="invert m1" src="assets/logo.svg" alt="" />
+            </div>
+            <div class="close">
+              <img class="invert aspect" src="assets/close.svg" alt="close">
+            </div>
+          </div>
+          <ul class="m1">
+            <li>
+              <img class="invert aspect" src="assets/home.svg" alt="home" /><a
+                class="li-style"
+                class="li-style"
+                href="#"
+                >Home</a
+              >
+            </li>
+            <li>
+              <img
+                class="invert aspect"
+                src="assets/search.svg"
+                alt="Search"
+              /><a class="li-style" href="#">Search</a>
+            </li>
+          </ul>
+        </div>
+        <div class="library m1 rounded bg-grey">
+          <div class="head">
+            <div class="library-sub">
+              <img
+                class="invert aspect"
+                src="assets/library.svg"
+                alt="Library"
+              />
+              <a class="li-style" href="#">Your Library</a>
+            </div>
+            <img class="invert aspect2" src="assets/plus.svg" alt="" />
+          </div>
+          <div class="song-list">
+            <ol>
+              
+            </ol>
+          </div>
+          <div class="footer">
+            <a href="#">Legal</a>
+            <a href="#">Privacy Center</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Cookies</a>
+            <a href="#">About Ads</a>
+            <a href="#">Accessibility</a>
+            <a href="#">Notice at Collection</a>
+            <a href="#"
+              >Your Privacy Choices
+              <img class="foot-img" src="assets/foot.svg" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div class="right  rounded">
+        <div class="right-container">
+
+          <div class="playlist-container bg-grey m1">
+            <div class="right-header rounded">
+              <div class="btn-nav m1">
+              <img class="aspect2 invert" src="assets/left.svg" alt="left" />
+              <img class="aspect2 invert" src="assets/right.svg" alt="right" />
+            </div>
+            <div class="hamburger">
+              <img class="invert aspect" src="assets/hamburger.svg" alt="">
+            </div>
+            <div class="login m1">
+              <button class="Sign">Sign up</button>
+              <button class="login-btn">Log in</button>
+            </div>
+        </div>
+        <div class="playlist ">
+          <h2 class="m1">Spotify Playlists</h2>
+          <div class="card-container">
+            
+          <div class="playbar">
+              <div class="seekbar">
+                <div class="circle"></div>
+              </div>
+              <div class="above-bar">
+                <div class="song-info">
+                </div>
+                <div class="song-btn">
+                  <img width="20" class="invert" id="prev" src="assets/prev.svg" alt="previous">
+                  <img width="20" class="invert" id="play" src="assets/play.svg" alt="play">
+                  <img width="20" class="invert" id="next" src="assets/nex.svg" alt="next">
+                </div>
+                <div class="time-vol">
+                  <div class="song-time">
+                    
+                  </div>
+                  <div class="volume">
+                    <img class="invert aspect2" id="volume" src="assets/volume.svg" alt="volume">
+                    <input type="range" name="volume">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <script src="js/app.js"></script>
+  </body>
+  </html>
+  
