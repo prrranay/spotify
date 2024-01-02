@@ -10,7 +10,7 @@ let songNames;
 // Function to fetch and display song names in the specified folder
 async function getSongNames(folder) {
   curFolder = folder;
-  let a = await fetch(`https://pranay-spotify.000webhostapp.com/${folder}/`);
+  let a = await fetch(`https://prrranay.github.io/spotify/${folder}/`);
   let response = await a.text();
   let div = document.createElement("div");
   div.innerHTML = response;
@@ -72,7 +72,7 @@ async function getSongNames(folder) {
 // Function to fetch and return the list of audio tracks in the specified folder
 async function getSongs(folder) {
   curFolder = folder;
-  let a = await fetch(`https://pranay-spotify.000webhostapp.com/${folder}/`);
+  let a = await fetch(`https://prrranay.github.io/spotify/${folder}/`);
   let response = await a.text();
   let div = document.createElement("div");
   div.innerHTML = response;
@@ -134,7 +134,7 @@ function secondsToMinutesSeconds(seconds) {
 
 // Function to fetch and display album information
 async function dispayAlbums() {
-  let a = await fetch(`https://pranay-spotify.000webhostapp.com/songs/`);
+  let a = await fetch(`https://prrranay.github.io/spotify/songs/`);
   let response = await a.text();
   let div = document.createElement("div");
   div.innerHTML = response;
@@ -148,7 +148,7 @@ async function dispayAlbums() {
       folder = e.innerText.slice(0, e.innerText.length - 1);
       
       // Fetch album information from JSON file
-      let a = await fetch(`https://pranay-spotify.000webhostapp.com/songs/${folder}/info.json`);
+      let a = await fetch(`https://prrranay.github.io/spotify/songs/${folder}/info.json`);
       let response = await a.json();
       
       // Display album card in the HTML
@@ -159,7 +159,7 @@ async function dispayAlbums() {
           <div class="play">
             <img src="assets/play.svg" height="16" width="12" alt="play">         
           </div>
-          <img src="https://pranay-spotify.000webhostapp.com/songs/${folder}/cover.jpg" alt="">
+          <img src="https://prrranay.github.io/spotify/songs/${folder}/cover.jpg" alt="">
           <h4>${response.title}</h4>
           <p>${response.description}</p>
         </div>`;
